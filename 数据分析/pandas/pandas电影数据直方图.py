@@ -12,6 +12,7 @@ runtime = df["Runtime (Minutes)"].values
 print(type(runtime))
 print(runtime.shape)
 # print(runtime)
+print(df.head(1))
 runtime_max = runtime.max()
 runtime_min = runtime.min()
 
@@ -24,4 +25,3 @@ plt.hist(runtime, num_bin)
 plt.xticks(range(runtime_min, runtime_max + d, d))
 plt.savefig("D:\\matplotlib可视化图\\电影数据直方图.png")
 plt.show()
-awdawdwad
