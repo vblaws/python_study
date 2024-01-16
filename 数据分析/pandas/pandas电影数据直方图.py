@@ -24,3 +24,4 @@ plt.hist(runtime, num_bin)
 plt.xticks(range(runtime_min, runtime_max + d, d))
 plt.savefig("D:\\matplotlib可视化图\\电影数据直方图.png")
 plt.show()
+awdawdwad
