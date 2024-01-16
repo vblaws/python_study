@@ -14,7 +14,7 @@ print(runtime.shape)
 # print(runtime)
 runtime_max = runtime.max()
 runtime_min = runtime.min()
-wadgawdyga
+
 # 计算组数
 d = 5
 num_bin = (runtime_max - runtime_min) // d
