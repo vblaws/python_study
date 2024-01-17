@@ -36,6 +36,7 @@ x = list(finall_data.index)
 y = list(finall_data.values)
 
 plt.bar(x, y)
+plt.savefig("D:\\matplotlib可视化图\\电影类型图.png")
 plt.show()
 
 # axis=0：表示沿着行的方向进行操作。在二维数组中，这相当于垂直向下。对于一维数组来说，这个参数没有意义，因为它只有一个轴。对于二维数组来说，axis=0通常表示按照列的方向进行操作。
