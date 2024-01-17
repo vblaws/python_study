@@ -33,8 +33,9 @@ plt.yticks(fontsize=20)
 # 描述
 plt.xlabel("岁数", fontsize=25)
 plt.ylabel("交到女友数量", fontsize=25)
+
 plt.title("恋爱经历", fontsize=25)
-plt.savefig("D:\\matplotlib可视化图\两人女友图.png")
+plt.savefig("D:\\matplotlib可视化图\\两人女友图.png")
 # 绘制网格
 plt.grid(alpha=0.4)
 # 显示图例
