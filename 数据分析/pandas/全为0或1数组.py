@@ -2,17 +2,16 @@ import numpy as np
 import pandas as pd
 
 file_path = "D:\\EageDownload\\DataAnalysis-master\\day05\\code\\IMDB-Movie-Data.csv"
+# 让打印出来的结果没有省略号
 pd.set_option('display.max_columns', None)
 
 df = pd.read_csv(file_path)
-# print(df.head())
 # Genre表示类型的意思
 temp_list = df["Genre"].str.split(",").tolist()  # [[],[],[]]
 
-print(df["Genre"].head(3))
-
+# print(df["Genre"].head(3))
+# 取出电影的所有种类放在同一个列表里面
 genre_data = list(set([i for j in temp_list for i in j]))  # 先转换为集合去重,然后转换为列表
-print(type(genre_data))
 
 # 构造全为0的数组,列数为每一个种类
 zero_list = pd.DataFrame(np.zeros((df.shape[0], len(genre_data))), columns=genre_data)
