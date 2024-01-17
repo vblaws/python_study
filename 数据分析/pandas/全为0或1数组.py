@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
@@ -24,7 +25,19 @@ for i in range(df.shape[0]):
 print(zero_list)
 
 # 统计每一个分类的电影的数量和
-print(zero_list.sum(axis=0))
+finall_data = zero_list.sum(axis=0)
+# 对结果进行升序排序
+# finall_data = finall_data.sort_values()
+# 画图
+plt.figure(figsize=(20, 8), dpi=80)
+
+x = list(finall_data.index)
+
+y = list(finall_data.values)
+
+plt.bar(x, y)
+plt.show()
+
 # axis=0：表示沿着行的方向进行操作。在二维数组中，这相当于垂直向下。对于一维数组来说，这个参数没有意义，因为它只有一个轴。对于二维数组来说，axis=0通常表示按照列的方向进行操作。
 # axis=1：表示沿着列的方向进行操作。在二维数组中，这相当于水平延申。对于一维数组来说，这个参数也没有意义。对于二维数组来说，axis=1通常表示按照行的方向进行操作。
 
