@@ -10,3 +10,9 @@ df2 = zeros_df.join(ones_df)
 print(df1)
 print("*" * 100)
 print(df2)
+
+df3 = pd.DataFrame(np.zeros((3, 3)), columns=list("fax"))
+print(df3)
+
+print("*" * 100)
+print(df1.merge(df3, on="a"))
