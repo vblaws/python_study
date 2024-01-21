@@ -40,11 +40,11 @@ print(china_data.info())
 china_groupd = china_data.groupby(by="State/Province")["Brand"].count()
 [print("*" * 100) for i in range(100)]
 # 数据按照多个条件进行分组
-groupd=df["Brand"].groupby(by=[df["Country"],df["State/Province"]]).count()
+groupd = df["Brand"].groupby(by=[df["Country"], df["State/Province"]]).count()
 print(groupd)
 print(type(groupd))
-
-
-
-
-groupd=df[["Brand"]].groupby(by=[df["Country"],df["State/Province"]]).count() # 错误Brand是一个Series没有Country和state/Province
+# [[]]返回的是DataFrame类型
+groupd1 = df.groupby(by=[df["Country"], df["State/Province"]]).count()[["Brand"]]
+print(type(groupd1))
+print(groupd1)
+print(groupd1.index)
