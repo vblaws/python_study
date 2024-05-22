@@ -3,13 +3,6 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="D:\EageDownload\DataAnalysis-master\day05\code\IMDB-Movie-Data.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\py_sql\数据文件.csv">
           <value>
             <Attribute>

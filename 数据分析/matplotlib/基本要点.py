@@ -12,5 +12,5 @@ plt.plot(x, y)
 # _x_lab = [i / 2 for i in range(4, 49)]
 # plt.xticks(_x_lab[::3])
 # plt.yticks(range(min(y), max(y)))
-plt.savefig("D:\\matplotlib可视化图\\我的第一张matplotlib图.png")
+plt.savefig("C:\\Users\\何潇磊\\Pictures\\美女图.png")
 plt.show()
